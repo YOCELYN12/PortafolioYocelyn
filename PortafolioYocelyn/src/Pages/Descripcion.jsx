@@ -43,11 +43,24 @@ function Descripcion() {
 
 
       </div>
+
       <div className='contenedorSobreMi'>
-        <div className='contenedorPalaabrasSobreMi'>>
-          <p className='palabrasSobreMi'>Apasionada por el aprendizaje continuo y el desarrollo profesional en diversas áreas. Poseo habilidades comunicativas sólidas <br />
+
+        <h1 className='tituloSobreMi'>Descripción:</h1>
+
+        <div className='contenedorPalaabrasSobreMi'>
+          <p className='palabrasSobreMi'>Apasionada por el aprendizaje continuo y el desarrollo profesional en diversas áreas. Poseo habilidades comunicativas sólidas
             y capacidad para adaptarme, mi interés en la ciberseguridad y mi disposición para formarme en temas comerciales me permiten ofrecer un
             enfoque integral para apoyar el crecimiento de la empresa, resolviendo desafíos con rapidez y eficacia. </p>
+        </div>
+
+      </div>
+
+      <div className='ContenedorHabilidades'>
+        <div style={{display:"flex", justifyContent: "center", borderStyle:"solid"}}>
+
+          <h2 className='Letras'>Sobre mi</h2>
+
         </div>
       </div>
 
