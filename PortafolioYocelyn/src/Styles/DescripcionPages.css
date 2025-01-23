@@ -1,0 +1,18 @@
+
+.mitadnegro {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.mitadblanco {
+    background-color: white;
+    left: 50%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+

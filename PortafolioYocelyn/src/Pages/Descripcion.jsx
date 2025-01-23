@@ -1,20 +1,17 @@
 import React from 'react'
+import '../Styles/DescripcionPages.css'
+function Descripcion() {
+    return (
 
-function Descripcion () {
-    return(
-        <div >
-
-            <div  className='contenedorDerecho'>
-               <h1>Hola</h1>
-            </div>
-
-            <div className='contenedorIzquierdo'>
-
-            </div>
-          
+    <div className="contenedor">
+      <div className="mitadnegro">
+        <img src="" alt="" />
+      </div>
+      <div className="mitadblanco"></div>
+    </div>
 
 
-        </div>
+
     )
 }
 
