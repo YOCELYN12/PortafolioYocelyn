@@ -57,7 +57,7 @@ function Descripcion() {
       </div>
 
       <div className='ContenedorHabilidades'>
-        <div style={{display:"flex", justifyContent: "center", borderStyle:"solid"}}>
+        <div className='cuadroSobreMi'>
 
           <h2 className='Letras'>Sobre mi</h2>
 

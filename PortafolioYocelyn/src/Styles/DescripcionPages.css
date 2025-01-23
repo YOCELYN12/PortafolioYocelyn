@@ -122,12 +122,19 @@
 }
 
 .cuadroSobreMi{
-    width: 10%;
-    border-width: 5% 5%;
-    border-style: solid; /* Estilo del borde sólido */
-    border-color: black; /* Color del borde negro */
-    box-sizing: border-box; /* Incluye el borde dentro del tamaño total */
-   
+    width: 20%; /* Reduce el ancho */
+    height: auto; /* Ajusta automáticamente la altura al contenido */
+    border-width: 2px; /* Borde más pequeño */
+    border-style: solid;
+    border-color: black;
+    box-sizing: border-box; /* Asegura que el ancho incluya el borde */
+    position: absolute; /* Necesario para centrar con precisión */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta la posición para que el centro coincida */
+    background-color: white; /* Color de fondo para visibilidad */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Alinea el contenido dentro del div */
 }
 
 
