@@ -88,7 +88,7 @@
     background-color: rgb(60, 58, 58);
     position: absolute;
     z-index: 0;
-    top: 99.8%;
+    top: 100%;
     left: 0%;
     padding: 40px 20px;
     justify-content: flex-start; /* Alinea horizontalmente al inicio (izquierda) */
@@ -113,32 +113,91 @@
 }
 
 .ContenedorHabilidades{
-    background-color: rgb(176, 172, 172);
+    background-color: rgb(215, 215, 213);
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 200%;
     left: 0%;
-    top: 127%;
+    top: 136%;
 }
 
 .cuadroSobreMi{
-    width: 20%; /* Reduce el ancho */
+    width: 13%; /* Reduce el ancho */
     height: auto; /* Ajusta automáticamente la altura al contenido */
-    border-width: 2px; /* Borde más pequeño */
+    max-height: 80px;
     border-style: solid;
     border-color: black;
-    box-sizing: border-box; /* Asegura que el ancho incluya el borde */
     position: absolute; /* Necesario para centrar con precisión */
-    top: 50%; /* Centrado vertical */
+    top: 10%; /* Centrado vertical */
     left: 50%; /* Centrado horizontal */
     transform: translate(-50%, -50%); /* Ajusta la posición para que el centro coincida */
-    background-color: white; /* Color de fondo para visibilidad */
-    padding: 1rem; /* Espaciado interno */
     text-align: center; /* Alinea el contenido dentro del div */
+    color: black;
+}
+
+.masPalabrasSobreMi p {
+    display: flex;
+    justify-content: center;
+    width: 260%; 
+    padding: 30px;
+    position: absolute;
+    left: -90%;
+}
+
+.linea1{
+  width: 3%;
+  border: none; /* Elimina el borde predeterminado */
+  height: 2px; /* Grosor de la línea */
+  background-color: #000; /* Color de la línea */
+  transform: rotate(90deg);
+  position: absolute;
+  left: 44%;
+  top: 33%;
+}
+
+.linea2{
+    width: 3%;
+    border: none; /* Elimina el borde predeterminado */
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea */
+    transform: rotate(90deg);
+    position: absolute;
+    left: 55%;
+    top: 33%;
 }
 
 
-.letras{
-    position: fixed;
-    z-index: 0;
+.Experiencia{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    font-size: 25px;
+    color: black;
 }
+
+
+.experience-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los bloques se ajusten automáticamente */
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative; /* Necesario para el posicionamiento del bloque central */
+    top: 30%;
+    padding: 120px;
+}
+  
+.experience {
+    width: 30%; /* Ancho de cada bloque */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.experience.center {
+    width: 40%; /* Más ancho que los otros */
+    align-self: flex-end; /* Se posiciona más abajo */
+    margin: 0 auto; /* Centrado horizontalmente */
+}
+  
+
