@@ -5,12 +5,13 @@ import { FaLinkedin } from "react-icons/fa";
 import { FiAtSign } from "react-icons/fi";
 import Footer from '../Components/Footer';
 import 'font-awesome/css/font-awesome.min.css';
+import ReactPlayer from 'react-player'
 
 
 
 function Descripcion() {
 
-  const linkLinkedin = "https://www.linkedin.com/in/yocelyn-rivera-83327622b/";
+
 
   const email = "yocelynrivera9@gmail.com"; // Tu correo electrónico
   const body = "Hola Yocelyn, me gustaría contactarme contigo."; // Cuerpo del correo
@@ -33,8 +34,8 @@ function Descripcion() {
         <div className='divMenu'>
           <a href="#Sobre-mi">Sobre mi</a>
           <a href="#Habilidades">Habilidades</a>
-          <a href="">Portafolio</a>
-          <button className='btnContactame'  onClick={() => window.location.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}>Contactame</button>
+          <a href="">Proyectos</a>
+          <button className='btnContactame' onClick={() => window.location.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}>Contactame</button>
         </div>
 
         <img className='FotoYocelyn' src="https://i.imgur.com/TVlDuLx.png" alt="" />
@@ -54,9 +55,9 @@ function Descripcion() {
         <p className='letrasEspecialidades'> <strong>Full stack Developer / Tecnico en soporte </strong></p>
 
         <div className='redesSociales'>
-          <button  onClick={() => window.location.href = `mailto:${email}?&body=${encodeURIComponent(body)}`}><FiAtSign /></button>
+          <button onClick={() => window.location.href = `mailto:${email}?&body=${encodeURIComponent(body)}`}><FiAtSign /></button>
           <button onClick={() => window.location.href = `https://github.com/dashboard`}><SiGithub /></button>
-          <button onClick={() => window.location.href =`https://www.linkedin.com/in/yocelyn-rivera-83327622b/` }><FaLinkedin /></button>
+          <button onClick={() => window.location.href = `https://www.linkedin.com/in/yocelyn-rivera-83327622b/`}><FaLinkedin /></button>
         </div>
 
 
@@ -66,7 +67,7 @@ function Descripcion() {
 
         <h1 className='tituloSobreMi'>Descripción:</h1>
 
-        <div  className='contenedorPalaabrasSobreMi'>
+        <div className='contenedorPalaabrasSobreMi'>
           <p className='palabrasSobreMi'>Apasionada por el aprendizaje continuo y el desarrollo profesional en diversas áreas. Poseo habilidades comunicativas sólidas
             y capacidad para adaptarme, mi interés en la ciberseguridad y mi disposición para formarme en temas comerciales me permiten ofrecer un
             enfoque integral para apoyar el crecimiento de la empresa, resolviendo desafíos con rapidez y eficacia. </p>
@@ -143,14 +144,15 @@ function Descripcion() {
             <h2 className='LetrasHabilidades'>Habilidades Tecnicas</h2>
           </div>
 
-          <img src="https://i.imgur.com/041XIsQ.png" alt=""  className='imgHabilidades'/>
-
-
+          <img src="https://i.imgur.com/041XIsQ.png" alt="" className='imgHabilidades' />
 
 
         </div>
 
-       
+        <Footer />
+
+
+
       </div>
 
     </div>

@@ -3,13 +3,16 @@
     color: #fff; /* Texto blanco */
     text-align: center; /* Centra todo el contenido */
     padding: 20px;
+    position: relative;
+    bottom: -150vh;
+    
   }
   
   .social-icons {
     display: flex;
     justify-content: center; /* Centra los íconos */
     gap: 20px; /* Espaciado entre íconos */
-    margin-bottom: 15px; /* Espaciado inferior respecto al texto */
+    margin-bottom: 30px; /* Espaciado inferior respecto al texto */
   }
   
   .icon {
