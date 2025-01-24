@@ -3,8 +3,27 @@ import '../Styles/DescripcionPages.css'
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { FiAtSign } from "react-icons/fi";
+import Footer from '../Components/Footer';
+import 'font-awesome/css/font-awesome.min.css';
+
+
 
 function Descripcion() {
+
+  const linkLinkedin = "https://www.linkedin.com/in/yocelyn-rivera-83327622b/";
+
+  const email = "yocelynrivera9@gmail.com"; // Tu correo electrónico
+  const body = "Hola Yocelyn, me gustaría contactarme contigo."; // Cuerpo del correo
+
+  const whatsappNumber = "50662809722"; // Tu número de WhatsApp en formato internacional
+  const message = "Hola Yocelyn, me gustaría contactarme contigo."; // Mensaje predefinido 
+
+  const linkedInUrl = "www.linkedin.com/in/yocelyn-rivera-83327622b"; // Reemplaza con tu URL de LinkedIn
+
+  const redirectToLinkedIn = () => {
+    window.open(linkedInUrl, "_blank"); // Abre LinkedIn en una nueva pestaña
+  };
+
   return (
 
     <div className="contenedor">
@@ -12,10 +31,10 @@ function Descripcion() {
       <div className="mitadnegro">
 
         <div className='divMenu'>
-          <a href="">Sobre mi</a>
-          <a href="">Habilidades</a>
+          <a href="#Sobre-mi">Sobre mi</a>
+          <a href="#Habilidades">Habilidades</a>
           <a href="">Portafolio</a>
-          <button className='btnContactame'>Contactame</button>
+          <button className='btnContactame'  onClick={() => window.location.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}>Contactame</button>
         </div>
 
         <img className='FotoYocelyn' src="https://i.imgur.com/TVlDuLx.png" alt="" />
@@ -35,20 +54,19 @@ function Descripcion() {
         <p className='letrasEspecialidades'> <strong>Full stack Developer / Tecnico en soporte </strong></p>
 
         <div className='redesSociales'>
-          <button><FiAtSign /></button>
-          <button><SiGithub /></button>
-          <button><FaLinkedin /></button>
+          <button  onClick={() => window.location.href = `mailto:${email}?&body=${encodeURIComponent(body)}`}><FiAtSign /></button>
+          <button onClick={() => window.location.href = `https://github.com/dashboard`}><SiGithub /></button>
+          <button onClick={() => window.location.href =`https://www.linkedin.com/in/yocelyn-rivera-83327622b/` }><FaLinkedin /></button>
         </div>
-
 
 
       </div>
 
-      <div className='contenedorSobreMi'>
+      <div id='Sobre-mi' className='contenedorSobreMi'>
 
         <h1 className='tituloSobreMi'>Descripción:</h1>
 
-        <div className='contenedorPalaabrasSobreMi'>
+        <div  className='contenedorPalaabrasSobreMi'>
           <p className='palabrasSobreMi'>Apasionada por el aprendizaje continuo y el desarrollo profesional en diversas áreas. Poseo habilidades comunicativas sólidas
             y capacidad para adaptarme, mi interés en la ciberseguridad y mi disposición para formarme en temas comerciales me permiten ofrecer un
             enfoque integral para apoyar el crecimiento de la empresa, resolviendo desafíos con rapidez y eficacia. </p>
@@ -83,7 +101,7 @@ function Descripcion() {
 
         <div className="experience-section">
 
-          
+
           <div class="experience left">
 
             <h3>CR Compus | Pasantía <span>Agosto 2022</span></h3>
@@ -107,7 +125,7 @@ function Descripcion() {
             </ul>
           </div>
 
-          
+
           <div className="experience center">
             <h3>Deinsa Global | Pasantía | Enero 2025 - actual</h3>
             <ul>
@@ -119,10 +137,21 @@ function Descripcion() {
             </ul>
           </div>
 
+
+          <div id='Habilidades' className='cuadroHabilidades'>
+
+            <h2 className='LetrasHabilidades'>Habilidades Tecnicas</h2>
+          </div>
+
+          <img src="https://i.imgur.com/041XIsQ.png" alt=""  className='imgHabilidades'/>
+
+
+
+
         </div>
 
+       
       </div>
-
 
     </div>
 

@@ -1,3 +1,10 @@
+.contenedor {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    /* Hace que el contenido ocupe el espacio disponible y el footer esté en la fila "auto" */
+    min-height: 100vh;
+    /* Asegura que la página ocupe toda la altura de la ventana */
+}
 
 .mitadnegro {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
@@ -11,45 +18,45 @@
 .mitadblanco {
     clip-path: polygon(92% 100%, 0% 100%, 0% 0%, 100% 0%);
     background-color: rgb(215, 215, 213);
-    left:0%;
+    left: 0%;
     width: 55%;
     height: 100%;
     z-index: 0;
     position: absolute;
     top: 0;
-    
+
 }
 
-.FotoYocelyn{
+.FotoYocelyn {
     position: relative;
     top: 34%;
 }
 
 
-.btnContactame{
+.btnContactame {
     background-color: aliceblue;
     border-radius: 20px;
 }
 
-.divMenu{
+.divMenu {
     display: flex;
     gap: 50px;
     position: absolute;
     z-index: 0;
     top: 10%;
     left: 20%;
-    
+
 }
 
-.divMenu a{
+.divMenu a {
     color: rgb(249, 249, 249);
 }
 
-.nombre{
-    font-size:50px;
+.nombre {
+    font-size: 50px;
 }
 
-.divTitulo{
+.divTitulo {
     position: absolute;
     top: 30%;
     left: 20%;
@@ -57,14 +64,14 @@
 }
 
 
-.divNombre{
+.divNombre {
     position: absolute;
     top: 40%;
     left: 20%;
     z-index: 0;
 }
 
-.letrasEspecialidades{
+.letrasEspecialidades {
     font-size: 20px;
     color: rgb(144, 142, 142);
     font-weight: 500;
@@ -73,7 +80,7 @@
     left: 20%;
 }
 
-.redesSociales{
+.redesSociales {
     position: absolute;
     top: 75%;
     left: 20%;
@@ -84,94 +91,107 @@
     box-shadow: 30vh;
 }
 
-.contenedorSobreMi{
+.contenedorSobreMi {
     background-color: rgb(60, 58, 58);
     position: absolute;
     z-index: 0;
     top: 100%;
     left: 0%;
     padding: 40px 20px;
-    justify-content: flex-start; /* Alinea horizontalmente al inicio (izquierda) */
-    align-items: center; /* Alinea verticalmente en el centro */
-    text-align: left; /* Alinea todo el texto hacia la izquierda */
-    
+    justify-content: flex-start;
+    /* Alinea horizontalmente al inicio (izquierda) */
+    align-items: center;
+    /* Alinea verticalmente en el centro */
+    text-align: left;
+    /* Alinea todo el texto hacia la izquierda */
+
 }
 
-.contenedorPalaabrasSobreMi{
+.contenedorPalaabrasSobreMi {
     width: 60%;
 }
 
-.palabrasSobreMi{
-    color: white;   
+.palabrasSobreMi {
+    color: white;
 }
 
-.tituloSobreMi{
+.tituloSobreMi {
     font-size: 35px;
     font-weight: 600;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.ContenedorHabilidades{
+.ContenedorHabilidades {
     background-color: rgb(215, 215, 213);
     position: absolute;
     width: 100%;
-    height: 200%;
+    height: 277%;
     left: 0%;
     top: 136%;
 }
 
-.cuadroSobreMi{
-    width: 13%; /* Reduce el ancho */
-    height: auto; /* Ajusta automáticamente la altura al contenido */
+.cuadroSobreMi {
+    width: 13%;
+    height: auto;
     max-height: 80px;
     border-style: solid;
     border-color: black;
-    position: absolute; /* Necesario para centrar con precisión */
-    top: 10%; /* Centrado vertical */
-    left: 50%; /* Centrado horizontal */
-    transform: translate(-50%, -50%); /* Ajusta la posición para que el centro coincida */
-    text-align: center; /* Alinea el contenido dentro del div */
+    position: absolute;
+    top: 5%;
+    /* Centrado vertical */
+    left: 50%;
+    /* Centrado horizontal */
+    transform: translate(-50%, -50%);
+    /* Ajusta la posición para que el centro coincida */
+    text-align: center;
+    /* Alinea el contenido dentro del div */
     color: black;
 }
 
 .masPalabrasSobreMi p {
     display: flex;
     justify-content: center;
-    width: 260%; 
+    width: 260%;
     padding: 30px;
     position: absolute;
     left: -90%;
 }
 
-.linea1{
-  width: 3%;
-  border: none; /* Elimina el borde predeterminado */
-  height: 2px; /* Grosor de la línea */
-  background-color: #000; /* Color de la línea */
-  transform: rotate(90deg);
-  position: absolute;
-  left: 44%;
-  top: 33%;
+.linea1 {
+    width: 3%;
+    border: none;
+    /* Elimina el borde predeterminado */
+    height: 2px;
+    /* Grosor de la línea */
+    background-color: #000;
+    /* Color de la línea */
+    transform: rotate(90deg);
+    position: absolute;
+    left: 44%;
+    top: 19%;
 }
 
-.linea2{
+.linea2 {
     width: 3%;
-    border: none; /* Elimina el borde predeterminado */
-    height: 2px; /* Grosor de la línea */
-    background-color: #000; /* Color de la línea */
+    border: none;
+    /* Elimina el borde predeterminado */
+    height: 2px;
+    /* Grosor de la línea */
+    background-color: #000;
+    /* Color de la línea */
     transform: rotate(90deg);
     position: absolute;
     left: 55%;
-    top: 33%;
+    top: 19%;
 }
 
 
-.Experiencia{
+.Experiencia {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 30%;
+    top: 17%;
     left: 47%;
     font-size: 25px;
     color: black;
@@ -180,24 +200,95 @@
 
 .experience-section {
     display: flex;
-    flex-wrap: wrap; /* Permite que los bloques se ajusten automáticamente */
+    flex-wrap: wrap;
+    /* Permite que los bloques se ajusten automáticamente */
     justify-content: space-between;
     align-items: flex-start;
-    position: relative; /* Necesario para el posicionamiento del bloque central */
-    top: 30%;
+    position: relative;
+    /* Necesario para el posicionamiento del bloque central */
+    top: 20%;
     padding: 120px;
 }
-  
+
 .experience {
-    width: 30%; /* Ancho de cada bloque */
+    width: 30%;
+    /* Ancho de cada bloque */
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-  
-.experience.center {
-    width: 40%; /* Más ancho que los otros */
-    align-self: flex-end; /* Se posiciona más abajo */
-    margin: 0 auto; /* Centrado horizontalmente */
-}
-  
 
+.experience.center {
+    width: 40%;
+    /* Más ancho que los otros */
+    align-self: flex-end;
+    /* Se posiciona más abajo */
+    margin: 0 auto;
+    /* Centrado horizontalmente */
+}
+
+.footer{
+    color: white;
+    padding: 90px 0;
+    width: 100%;
+    position: relative;
+    bottom: -110vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cuadroHabilidades {
+    width: 18%;
+    /* Reduce el ancho */
+    height: auto;
+    /* Ajusta automáticamente la altura al contenido */
+    max-height: 80px;
+    border-style: solid;
+    border-color: black;
+    position: absolute;
+    /* Necesario para centrar con precisión */
+    top: 100%;
+    /* Centrado vertical */
+    left: 50%;
+    /* Centrado horizontal */
+    transform: translate(-50%, -50%);
+    /* Ajusta la posición para que el centro coincida */
+    text-align: center;
+    /* Alinea el contenido dentro del div */
+    color: black;
+}
+
+
+
+
+.iconos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Asegura que haya al menos 4 íconos por fila */
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icono i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.icono p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.imgHabilidades{
+    object-fit: cover;
+    position: absolute;
+    top: 110%;
+    left: 30%;
+}

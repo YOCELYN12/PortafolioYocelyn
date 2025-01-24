@@ -1,0 +1,30 @@
+.footer-container {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centra todo el contenido */
+    padding: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos */
+    gap: 20px; /* Espaciado entre íconos */
+    margin-bottom: 15px; /* Espaciado inferior respecto al texto */
+  }
+  
+  .icon {
+    font-size: 24px; /* Tamaño de los íconos */
+    color: #fff; /* Color blanco */
+    transition: transform 0.3s, color 0.3s; /* Efecto de animación */
+  }
+  
+  .icon:hover {
+    color: #0077b5; /* Cambia a azul para LinkedIn */
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+  }
+  
+  .footer-text {
+    font-size: 14px; /* Tamaño del texto */
+    margin-top: 10px;
+  }
+  
